@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(#fdd4c2, #ffffff);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.container {
+  width: 1200px;
+  margin: 20px auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+}
+
+.navbar-btn {
+  text-decoration: none;
+  background-color: #f36221;
+  color: #fff;
+  padding: 15px 40px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+.navbar-btn:hover {
+  background-color: #eb510a;
+}
+
+.header__car {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+}
+
+.header__car h1 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.568);
+  animation-name: toTop;
+  animation-duration: 2s;
+}
+
+@keyframes toTop {
+  0% {
+    top: 100%;
+    opacity: 0;
+  }
+  100% {
+    top: 25%;
+    opacity: 1;
+  }
+}
+
+.header__car img {
+  width: 880px;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: toLeft;
+  animation-duration: 3s;
+  position: absolute;
+}
+
+@keyframes toLeft {
+  0% {
+    left: 60%;
+    opacity: 0;
+  }
+  100% {
+    left: 50%;
+    opacity: 1;
+  }
+}
+
+.dots {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dots .dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.dot:nth-child(1) {
+  background-color: white;
+  border: 1px solid rgb(124, 119, 119);
+}
+
+.dot:nth-child(2) {
+  background-color: #ff3535;
+}
+
+.dot:nth-child(3) {
+  background-color: #363636;
+}
+
+.dot:nth-child(4) {
+  background-color: #474696;
+}
+
+.dot:nth-child(5) {
+  background-color: #346d0f;
+}
